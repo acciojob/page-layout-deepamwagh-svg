@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function Pagelayout({ header, footer, children }) {
-    return (
-        <div>
-            <header>{header}</header>
+const PageLayout = ({ header, footer, children }) => {
+  return (
+    <div>
+      {header}
+      {children}
+      {footer}
+    </div>
+  );
+};
 
-            <main>{children}</main>
-
-            <footer>{footer}</footer>
-        </div>
-    );
-}
+export default PageLayout;
